@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="presentTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="mDS-IZ-Fqb">
+                                <rect key="frame" x="47.666666666666657" y="249.66666666666663" width="319" height="237"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-K5-LW5">
+                                        <rect key="frame" x="21" y="0.0" width="277" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Show Alert View with full screen"/>
+                                        <connections>
+                                            <action selector="clickShowAlertViewWithFullScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7a-uv-obx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-uy-OOw">
+                                        <rect key="frame" x="0.0" y="67.000000000000028" width="319" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Show Alert View with over full screen"/>
+                                        <connections>
+                                            <action selector="clickShowAlertViewWithOverFullScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5g-CD-PIq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R36-zQ-MIB">
+                                        <rect key="frame" x="111.33333333333334" y="134.00000000000003" width="96" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Full Screen"/>
+                                        <connections>
+                                            <action selector="clickFullscreenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1IA-iK-q5m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-Ak-W9o">
+                                        <rect key="frame" x="88" y="201.00000000000003" width="143" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Over Full Screen"/>
+                                        <connections>
+                                            <action selector="clickOverFullscreenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1S4-Uz-cyD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mDS-IZ-Fqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xr3-lP-Hdj"/>
+                            <constraint firstItem="mDS-IZ-Fqb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ybe-fQ-8RT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+        <!--Present View Controller-->
+        <scene sceneID="SD5-sf-k8T">
+            <objects>
+                <viewController storyboardIdentifier="PresentViewController" id="bro-ka-6wW" customClass="PresentViewController" customModule="presentTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M19-f4-77X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vV9-uC-3ag">
+                                <rect key="frame" x="157.66666666666666" y="315.66666666666669" width="98.666666666666657" height="104.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK1-pO-jYn">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="40.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVi-72-TQx">
+                                        <rect key="frame" x="0.0" y="70.666666666666629" width="98.666666666666671" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="dismissView:" destination="bro-ka-6wW" eventType="touchUpInside" id="LGe-j4-MtN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vV9-uC-3ag" firstAttribute="centerX" secondItem="M19-f4-77X" secondAttribute="centerX" id="aze-P2-QFi"/>
+                            <constraint firstItem="vV9-uC-3ag" firstAttribute="centerY" secondItem="M19-f4-77X" secondAttribute="centerY" id="hfv-jZ-5Ku"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rQP-d2-RbJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4E-i2-6np" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="127"/>
+        </scene>
+    </scenes>
+</document>
